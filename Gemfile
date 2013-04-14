@@ -7,7 +7,11 @@ gem 'pg', '0.14.1'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
-  gem 'rspec-rails', '2.9.0'  
+  gem 'rspec-rails', '2.13.0' 
+  gem 'guard-rspec', '2.5.3'
+
+  gem 'guard-spork', '1.5.0'
+  gem 'spork', '0.9.2'
 end
 
 
@@ -27,6 +31,9 @@ gem 'jquery-rails', '2.2.1'
 
 group :test do
     gem 'capybara', '1.1.2'
+
+    gem 'rb-inotify', '0.9.0'
+    gem 'libnotify', '0.8.0'
 end
 
 # To use ActiveModel has_secure_password
